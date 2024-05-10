@@ -1,2 +1,2 @@
-﻿# Este repositório contém as atividades de fixação de conteúdo do curso Devquest, destinadas a consolidar o conhecimento adquirido durante o curso.
+﻿# Este repositório contém atividades do curso Devquest, desenvolvidas para fixar o aprendizado.
  
