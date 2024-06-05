@@ -1,0 +1,11 @@
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media screen and (max-width: 768px ){
+    
+}
