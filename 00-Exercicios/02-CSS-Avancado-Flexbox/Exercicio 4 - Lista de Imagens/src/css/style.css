@@ -1,0 +1,40 @@
+/*  ===== Reset css   =======*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,main{
+    height: 100%;
+}
+
+body{
+    font-family: 'Public Sans', sans-serif;
+}
+
+.container{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.pintura{
+    position: relative;
+}
+
+.legendas{
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    color: white;
+}
+
+
+

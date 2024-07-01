@@ -1,0 +1,93 @@
+/*  ===== Reset css   =======*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+html,
+body {
+	height: 100%;
+    font-family: Public Sans;
+    font-weight: 400;
+}
+
+
+header{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo h1{
+    font-size: 20px;
+    padding: 10px;
+}
+
+.menu {
+	display: flex;
+    align-items: center;
+}
+
+.menu li a{
+    padding: 10px 5px;
+    transition: 0.3s ease-in-out;
+    margin-left: 30px;
+}
+
+.menu li a:hover{
+    background-color: #5BC241;
+    color: white;
+}
+
+.menu li a.btnCadastro{
+    border-radius: 10%;
+    background-color: #5BC241;
+    padding: 15px 20px;
+}
+
+
+/*======== Responsivo ==== */
+
+@media screen and (max-width: 900px ){
+    header{
+        flex-direction: column;
+    }
+    
+    .logo h1{
+        font-size: 40px;
+    }
+    
+    .menu{
+        margin-top: 50px;
+        flex-direction: column;
+        /* text-align: center; */
+    }
+
+    li{
+        margin-bottom: 60px;
+    }
+
+    .menu li a{
+        font-size: 40px;
+        margin-left: 0;
+    }
+}
+
+
