@@ -1,0 +1,67 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    gap: 20px;
+}
+
+.videoPrincipal{
+    max-width: 900px;
+    margin-top: 100px;
+    flex: 1;
+}
+
+.video {
+	width: 900px;
+	height:415px;
+	background: gray;
+    /* border: 10px solid blue; */
+    text-align: center;
+    margin: 0;
+}
+
+.descricao h2{
+    margin-top: 20px;
+}
+
+.descricao p{
+    margin-top: 10px;
+}
+
+
+.barraLateral{
+    max-width: 270px;
+    margin-top: 100px;
+}
+
+.videos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.propaganda {
+	width: 270px;
+	height: 56px;
+	background: gray;
+    margin-bottom: 25px;
+}
+
+.imagem {
+    width: 101px;
+	height: 71px;
+    background: gray;
+}
+
