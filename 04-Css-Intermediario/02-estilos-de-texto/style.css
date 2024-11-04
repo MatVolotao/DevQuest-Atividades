@@ -13,15 +13,15 @@
   text-align: center;
 }
 
-/* .alinhado-justificado {
+.alinhado-justificado {
   text-align: justify;
-} */
+}
 
 /* -------------------------------------- */
 /* ----------- TEXT TRANsFORM ----------- */
 /* -------------------------------------- */
 
-/* .maiuscula {
+.maiuscula {
   text-transform: uppercase;
 }
 
@@ -31,13 +31,13 @@
 
 .capitalizado {
   text-transform: capitalize;
-} */
+}
 
 /* -------------------------------------- */
 /* --------- TEXT DECORATION ------------ */
 /* -------------------------------------- */
 
-/* .sublinhado {
+.sublinhado {
   text-decoration: underline;
 }
 
@@ -47,23 +47,23 @@
 
 .sem-text-decoration {
   text-decoration: none;
-} */
+}
 
 /* -------------------------------------- */
 /* --------- LETTER SPACING ------------- */
 /* -------------------------------------- */
 
-/* .altura-entre-linhas {
+.altura-entre-linhas {
   line-height: 40px;
-} */
+}
 
 /* -------------------------------------- */
 /* --------- SOMBRA NO EXTO ------------- */
 /* -------------------------------------- */
 
-/* .sombra-de-texto {
+.sombra-de-texto {
   text-shadow: 10px 10px 1px #808080;
-} */
+}
 
 /* -------------------------------------- */
 /* --------------- GERAL  --------------- */
