@@ -11,9 +11,13 @@
     </style>
 </head>
 <body>
+    <!-- indica o começo da tabela -->
     <table>
+        <!-- cabeçalho -->
         <thead>
+            <!-- linha -->
             <tr>
+                <!-- coluna - table heads -->
                 <th>Nome</th>
                 <th>Idade</th>
                 <th>Informações adicionais</th>
@@ -22,17 +26,21 @@
                 <th>Informações adicionais</th>
             </tr>
         </thead>
-
+        <!-- corpo dos dados -->
         <tbody>
+            <!-- linhas -->
             <tr>
+                <!-- colunas - table data -->
                 <td>João</td>
                 <td>25</td>
                 <td>Sou estudante</td>
+                <td colspan="3" > Ganhou as olimpiadas de Tokyo</td>
             </tr>
             <tr>
                 <td>Maria</td>
                 <td>23</td>
                 <td>Programadora</td>
+                <td colspan="3" rowspan="2"> Não se inscreveram</td>
             </tr>
             <tr>
                 <td>José</td>
@@ -40,16 +48,24 @@
                 <td>Programador</td>
             </tr>
             <tr>
-                <td>Tião</td>
+                <td>Roberto</td>
                 <td>22</td>
                 <td>Programador</td>
+                <td rowspan="2" colspan="3">Participantes da Maratona de Programação</td>
             </tr>
             <tr>
-                <td>Maria</td>
+                <td>Fabiana</td>
                 <td>23</td>
-                <td>Programador</td>
+                <td>Programadora</td>
             </tr>
         </tbody>
+        <!-- rodapé -->
+        <tfoot>
+            <tr>
+                <td>Informações:</td>
+                <td colspan="5">Mais Informações no site http://Participantes2025.com.br</td>
+            </tr>
+        </tfoot>
         
     </table>
 </body>
