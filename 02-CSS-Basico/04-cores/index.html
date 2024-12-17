@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Quarto exercício do módulo de CSS básico do curso DevQuest."
-    />
+    <meta name="description" content="Quarto exercício do módulo de CSS básico do curso DevQuest." />
     <link rel="stylesheet" href="css/style.css" />
     <title>Cores CSS</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <h1>Cores CSS</h1>
     <p>
-      Existem 4 maneiras de aplicar coloração em elementos no CSS. Todos os
-      exemplos abaixo usarão a cor vermelha como referência. Inspecione o código
-      para ver a diferença entre cada um!
+        Existem 4 maneiras de aplicar coloração em elementos no CSS. Todos os
+        exemplos abaixo usarão a cor vermelha como referência. Inspecione o código
+        para ver a diferença entre cada um!
     </p>
     <p>
-      Os estilos dessa página foram aplicados utilizando CSS inline apenas para
-      fins didáticos. O recomendado é utilizar CSS externo.
+        Os estilos dessa página foram aplicados utilizando CSS inline apenas para
+        fins didáticos. O recomendado é utilizar CSS externo.
     </p>
+    <!-- Nome da cor por extenso: Simples de usar, ideal para cores básicas. -->
     <h2 style="color: red">Subtítulo 1 (nome da cor por extenso)</h2>
+    <!-- RGB: Muito utilizado para especificar cores precisas. Facilmente ajustável para combinações personalizadas. -->
     <h2 style="color: rgb(255, 0, 0)">Subtítulo 2 (RGB)</h2>
+    <!-- RGBA: Versão do RGB com opacidade (alfa). Útil para efeitos de transparência em designs modernos. -->
     <h2 style="color: rgba(255, 0, 0, 0.6)">Subtítulo 3 (RGBA)</h2>
+    <!-- Hexadecimal: Popular em desenvolvimento web. Compacto e amplamente suportado por editores e navegadores. -->
     <h2 style="color: #ff0000">Subtítulo 4 (Hexadecimal)</h2>
+    <!-- HSL: Mais intuitivo para ajustes de saturação e luminosidade, especialmente em sistemas de design. -->
     <h2 style="color: hsl(0,100%,50%)">HSL</h2>
+    <!-- HSLA: Igual ao HSL, mas inclui transparência (alfa). Perfeito para efeitos visuais complexos. -->
     <h2 style="color: hsla(0,100%,50%,0.5)">HSLA</h2>
-  </body>
+
+    <!-- 
+    Recomendação:
+    Use Hexadecimal ou RGB para consistência e suporte universal.
+    Prefira HSL/HSLA para trabalhos que exigem ajustes dinâmicos ou sistemas de design.
+     -->
+
+</body>
+
 </html>

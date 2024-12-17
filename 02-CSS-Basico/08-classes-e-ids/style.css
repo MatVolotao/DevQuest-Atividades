@@ -1,9 +1,11 @@
+/* ===== Id ===== */
 #page-description {
   color: crimson;
   font-size: 18px;
   font-weight: bold;
 }
 
+/* === classes === */
 .savory-food-title {
   background-color: cornflowerblue;
 }

@@ -1,9 +1,23 @@
-h2 {
-  border: 2px solid palevioletred;
-  margin: 50px;
-}
+
+  /* Outras funcções usadas que serao vistas no futuro para mostrar o visual apenas */
+  h2 {
+    border: 4px solid blue; /* Cor da borda */
+    padding: 25px; /* Espaço interno */
+    margin: 50px; /* Espaço externo */
+    background-color: gray; /* Destaca o padding com uma cor diferente */
+    position: relative; /* Necessário para posicionar o box-shadow */
+    box-shadow: 0 0 0 50px rgba(135, 206, 250, 0.5); /* Cor para simular a margem (gray) */
+    /* margin: 50px = margin: 50px 50px    50px  50px */
+    /*                        cima direita baixo esquerda */
+  }
 
 h3 {
   padding: 30px 0;
-  border: 2px solid palevioletred;
+  border: 4px solid red;
+  /* 
+  border-style: solid;
+  border-width: 4px;
+  border-color: red; 
+  width e color tb tem como especificar para top right bottom e left 
+  */
 }

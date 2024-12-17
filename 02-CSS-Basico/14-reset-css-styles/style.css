@@ -1,0 +1,31 @@
+.example,.example2{
+    font-size: 72px;
+}
+
+.example::before {
+    content: "ANTES - ";
+    color: red;
+}
+
+.example::after {
+    content: " - DEPOIS";
+    color: blue;
+}
+
+/* ============= */
+
+/* * {
+    box-sizing: border-box;
+} */
+
+*::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.example2::before {
+    content: "⚠️ ";
+    padding: 10px; /* Adiciona espaço interno ao ::before */
+}
+
