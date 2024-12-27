@@ -1,55 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Sétimo exercício do módulo de HTML intermediário do curso DevQuest." />
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Sétimo exercício do módulo de HTML intermediário do curso DevQuest." >
     <title>Formulário</title>
 </head>
 
 <body>
     <h1>Formulário</h1>
+    <!-- Use GET: Para dados não sensíveis, acessíveis na URL, ou ações idempotentes. -->
+    <!-- Use POST: Para dados sensíveis, grandes volumes, ou operações que alteram o servidor. -->
     <h2>Formulário com GET</h2>
     <form method="get" action="index.html">
-        <p>
-            O método GET passará os dados do formulário como parâmetros da URL, como
-            quando realizamos uma busca. Não utilize o GET para inputs com
-            informações sensíveis como senhas, pois elas aparecerão na URL.
-        </p>
         <label for="busca">Faça uma busca:</label>
-        <input type="text" name="q" id="busca" />
-        <input type="submit" value="Enviar" />
+        <input type="text" name="q" id="busca" >
+        <input type="submit" value="Enviar" >
     </form>
 
     <h2>Formulário com POST</h2>
     <form method="post" action="index.html">
-        <p>
+        <!-- <p>
             O método POST passará os dados do formulário por baixo dos panos.
             Utilizamos para tratar dados sensíveis como senhas e e-mails
-        </p>
+        </p> -->
         <label for="senha">Digite sua senha:</label>
-        <input type="password" name="q" id="senha" />
-        <input type="submit" value="Enviar" />
+        <input type="password" name="q" id="senha" >
+        <input type="submit" value="Enviar" >
     </form>
 
     <h2>Exemplo de formulário do Facebook (sem CSS):</h2>
     <form method="GET" action="index.html">
-        <input type="text" name="nome" id="nome" placeholder="Nome" required />
-        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required />
+        <input type="text" name="nome" id="nome" placeholder="Nome" required >
+        <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required >
 
-        <br />
+        <br >
 
-        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou e-mail" required />
-        <input type="password" name="senha" id="senha" placeholder="Nova senha" required />
+        <input type="text" name="celular-ou-email" id="celular-ou-email" placeholder="Celular ou e-mail" required >
+        <input type="password" name="senha" id="senha" placeholder="Nova senha" required >
 
-        <br />
-        <br />
+        <br >
+        <br >
 
         <label>Data de nascimento:</label>
 
-        <br />
+        <br >
 
         <select name="dia" id="dia">
             <option value="1">1</option>
@@ -75,26 +72,26 @@
             <option value="2002">2002</option>
         </select>
 
-        <br />
-        <br />
+        <br >
+        <br >
 
         <label>Gênero:</label>
 
-        <br />
+        <br >
 
-        <input type="radio" name="genero" id="feminino" value="feminino" />
+        <input type="radio" name="genero" id="feminino" value="feminino" >
         <label for="feminino">Feminino</label>
-        <input type="radio" name="genero" id="masculino" value="masculino" />
+        <input type="radio" name="genero" id="masculino" value="masculino" >
         <label for="masculino">Masculino</label>
-        <input type="radio" name="genero" id="nao-binario" value="nao-binario" />
-        <label for="nao-binario">Não-binário</label>
-        <input type="radio" name="genero" id="personalizar" value="personalizar" />
+        <input type="radio" name="genero" id="desconhecido" value="prefiro nao responder" >
+        <label for="desconhecido">prefiro nao responder</label>
+        <input type="radio" name="genero" id="personalizar" value="personalizar" >
         <label for="personalizar">Personalizar</label>
 
-        <br />
-        <br />
+        <br >
+        <br >
 
-        <input type="submit" value="Enviar" />
+        <input type="submit" value="Enviar" >
     </form>
 </body>
 
