@@ -1,4 +1,39 @@
-img {
-  float: left;
-  margin-right: 15px;
+/* primeiro metodo e mais usado: clearfix */
+
+.float .right{
+    float: right;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.float .left{
+    float: left;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.float::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* segundo metodo adiconando um elemento vazio, nao é ideil */
+
+.float2 .right2{
+    float: right;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.float2 .left2{
+    float: left;
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}
+
+.clear{
+    clear: both;
 }

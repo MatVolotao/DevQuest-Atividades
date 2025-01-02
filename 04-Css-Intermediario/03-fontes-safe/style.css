@@ -1,11 +1,11 @@
 h1 {
-  font-family: Arial, Helvetica, sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
-  font-family: "Courier New", Courier, monospace;
+	font-family: "Courier New", Courier, monospace;
+    /* font-weight: 100 - 400 -> normal */
+    /* font-weight: 500 - 700 -> normal */
+    /* font-weight: 800 - 900 -> extra bold */
 }
 
-@media screen and (max-width: 768px ){
-    
-}

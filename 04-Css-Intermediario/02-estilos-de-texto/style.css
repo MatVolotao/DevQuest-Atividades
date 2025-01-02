@@ -2,19 +2,19 @@
 /* ------------ TEXT ALIGN -------------- */
 /* -------------------------------------- */
 .alinhado-esquerda {
-  text-align: left;
+	text-align: left;
 }
 
 .alinhado-direita {
-  text-align: right;
+	text-align: right;
 }
 
 .alinhado-centro {
-  text-align: center;
+	text-align: center;
 }
 
 .alinhado-justificado {
-  text-align: justify;
+	text-align: justify;
 }
 
 /* -------------------------------------- */
@@ -22,31 +22,32 @@
 /* -------------------------------------- */
 
 .maiuscula {
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .minuscula {
-  text-transform: lowercase;
+	text-transform: lowercase;
 }
 
 .capitalizado {
-  text-transform: capitalize;
+	text-transform: capitalize;
 }
 
 /* -------------------------------------- */
 /* --------- TEXT DECORATION ------------ */
 /* -------------------------------------- */
+/* Bem utilizado para tirar style de link */
 
 .sublinhado {
-  text-decoration: underline;
+	text-decoration: underline;
 }
 
 .linha-sobreposta {
-  text-decoration: line-through;
+	text-decoration: line-through;
 }
 
 .sem-text-decoration {
-  text-decoration: none;
+	text-decoration: none;
 }
 
 /* -------------------------------------- */
@@ -54,7 +55,7 @@
 /* -------------------------------------- */
 
 .altura-entre-linhas {
-  line-height: 40px;
+	line-height: 40px;
 }
 
 /* -------------------------------------- */
@@ -62,32 +63,33 @@
 /* -------------------------------------- */
 
 .sombra-de-texto {
-  text-shadow: 10px 10px 1px #808080;
+	text-shadow: 10px 10px 1px #808080;
+    /* lateral - topo - desfoque */
 }
 
 /* -------------------------------------- */
 /* --------------- GERAL  --------------- */
 /* -------------------------------------- */
 .fundo-alinhamento {
-  padding: 20px;
-  background-color: #D1C4E9;
+	padding: 20px;
+	background-color: #d1c4e9;
 }
 
 .fundo-transform {
-  padding: 20px;
-  background-color: #C8E6C9;
+	padding: 20px;
+	background-color: #c8e6c9;
 }
 
 .fundo-decoration {
-  padding: 20px;
-  background-color: #FFF9C4;
+	padding: 20px;
+	background-color: #fff9c4;
 }
 
 .fundo {
-  padding: 20px;
-  background-color: #ccc;
+	padding: 20px;
+	background-color: #ccc;
 }
 
 html {
-  font-size: 24px;
+	font-size: 24px;
 }

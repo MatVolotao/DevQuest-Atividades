@@ -1,35 +1,41 @@
 p {
-  color: coral;
-  font-size: 24px;
-  font-weight: bold;
+	color: coral;
+	font-size: 24px;
+	font-weight: bold;
 }
 
 .bg {
-  background-color: lightgreen;
-  background-image: url("images/cat.png");
+	background-color: lightgreen;
+	background-image: url("images/cat.png");
 }
 
+/* settando medidas */
 .bg-img {
-  width: 513px;
-  height: 340px;
+	width: 513px;
+	height: 340px;
 }
 
+/* para nao repetir a imagem  */
 .bg-repeat {
-  background-repeat: no-repeat;
-  height: 540px;
+	background-repeat: no-repeat;
+	height: 540px;
 }
 
+/* cobrir todo o elemento */
 .bg-size-cover {
-  background-size: cover;
-  height: 540px; /* A altura do background-size: cover; deve ser, no máximo, a altura da imagem para que ela não perca a qualidade */
+	background-size: cover;
+	height: 540px; 
+    /* A altura do background-size: cover; deve ser, no máximo, a altura da imagem para que ela não perca a qualidade */
 }
 
-.bg-fixed {
-  background-attachment: fixed;
-  height: 540px;
+/* Efeito parallax */
+.bg-fixed { 
+	background-attachment: fixed;
+	height: 540px;
 }
 
-.bg-position { /* Utilizando a shorthand */
-  background: #000 url('images/cat.png') no-repeat bottom right;
-  height: 540px; /* Pro background-position funcionar é necessário definir o background-repeat como no-repeat, caso contrário a imagem irá repetir, ocupando todo o espaço do elemento e ignorando o posicionamento desejado. Possui dois valores e o padrão é center center */
+.bg-position {
+	/* Utilizando a shorthand */
+	background: #000 url("images/cat.png") no-repeat bottom right;
+	height: 540px; /* Pro background-position funcionar é necessário definir o background-repeat como no-repeat, caso contrário a imagem irá repetir, ocupando todo o espaço do elemento e ignorando o posicionamento desejado. Possui dois valores e o padrão é center center */
 }

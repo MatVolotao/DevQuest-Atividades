@@ -1,19 +1,23 @@
 .container-cascata {
-  background-color: aqua;
+	background-color: aqua;
 }
 
 /* .container-cascata {
-  background-color: orange;
+    background-color: orange;
 } */
 
 /* Caso a gente descomente o código acima ele irá se sobrepor ao background-color: aqua por conta do efeito cascata */
 
 .container-especificidade p {
-  background-color: blueviolet;
+	background-color: blueviolet;
 }
 
 .paragrafo {
-  background-color: blue;
-} 
+	background-color: blue;
+}
+
+/* .paragrafo {
+	background-color: blue !important; evitar usar
+} */
 
 /* Perceba acima que, mesmo o seletor .paragrafo sendo mais forte no quesito cascata, a adição do elemento filho no seletor de cima o tornou mais específico, sobrescrevendo o estilo do seletor de baixo, o qual não possui a adição do elemento filho: */
