@@ -1,22 +1,29 @@
+/* Nao funciona pra elementos do estilo inline */
+
 .first-letter::first-letter {
-  font-size: 50px;
-  font-weight: bold;
-  color: palevioletred;
+	font-size: 50px;
+	font-weight: bold;
+	color: palevioletred;
 }
 
 .first-line::first-line {
-  color: orangered;
+	color: orangered;
 }
 
 li::marker {
-  color: blueviolet;
-  font-size: 30px;
+	color: blueviolet;
+	font-size: 30px;
 }
 
 h3::before {
-  content: url(images/9373104291661247011-24.png);
+	content: "";
+    background: url(images/9373104291661247011-24.png) center center no-repeat;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: yellow;
 }
 
 h4::after {
-  content: url(images/21362697191661247270-20.png);
+	content: url(images/21362697191661247270-20.png);
 }

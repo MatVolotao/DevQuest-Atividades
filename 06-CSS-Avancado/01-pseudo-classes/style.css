@@ -1,20 +1,33 @@
+/* seletor:pseudo-classe{
+    propriedade:valor
+} 
+
+*/
 p:first-child {
-  color: blueviolet;
+	color: blueviolet;
 }
 
 p:last-child {
-  color: aquamarine;
+	color: aquamarine;
+}
+p:not(div  p) {
+    font-size: 18px;
+    font-weight: bold;
+	color: blue;
 }
 
 ul li:nth-child(even) {
-  color: orangered;
+	color: orangered;
 }
+/* do primeiro ate o terceiro */
+/* ul li:nth-child(n+1):nth-child(-n+3) {
+	color: orangered;
+} */
 
 ol li:not(.teste) {
-  color: green;
+	color: green;
 }
 
 p:only-child {
-  color: deeppink;
+	color: deeppink;
 }
-
