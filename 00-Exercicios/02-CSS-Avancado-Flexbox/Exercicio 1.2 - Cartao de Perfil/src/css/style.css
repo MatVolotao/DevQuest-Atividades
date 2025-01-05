@@ -1,0 +1,83 @@
+
+body{
+    background-color: var(--cordefundo);
+    color: var(--cordotexto);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* width: 100vw; */
+    
+
+}
+
+.cartao{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    width: 400px;
+    height: 450px;
+    background: white;
+    border-radius: 8%;
+    
+}
+
+
+.perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    /* background-color: black; */
+}
+
+.perfil img{
+    display: inline-block;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+
+.perfil  p{
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+
+
+.cidade{
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.numeros{
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+    margin: 8%;
+}
+
+.info{
+    font-weight: bold;
+}
+
+p{
+    color: black;
+    font-size: 20px;
+}
+
+span {
+    font-weight: normal;
+}
+
+.idade{
+    color: var(--cordotexto);
+}
+

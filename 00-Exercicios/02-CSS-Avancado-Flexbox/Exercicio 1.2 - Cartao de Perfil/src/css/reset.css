@@ -1,0 +1,80 @@
+/* ------------------- */
+/* Reset Melhorado     */
+/* ------------------- */
+
+/* 1. Melhorar o box-sizing */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* 2. Remover margens e paddings padrão */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* 3. Ajustar corpo */
+html {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* 4. Tornar mídias mais responsivas */
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+/* 5. Herdar fontes para controles de formulário */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* 6. Remover estilos padrão de listas */
+ul,
+ol {
+	list-style: none;
+}
+
+/* 7. Reset de tabelas */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 8. Quebra de texto */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* 9. Respeitar preferências de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
