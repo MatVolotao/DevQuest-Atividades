@@ -1,0 +1,35 @@
+.container {
+	display: grid;
+	width: 900px;
+	height: 415px;
+	/* grid-template-areas: "videoPrincipal propaganda"
+                        "videoPrincipal videos";
+    grid-template-columns: 1fr 270px; 
+    grid-row: 56px 1fr;  */
+
+	/* versao shorthand */
+	grid-template:
+		"video propaganda" 56px
+		"descricao videos" 1fr
+		/ 1fr 270px;
+    gap: 15px;
+}
+
+.video {
+    grid-area: video;
+    /* width: 543px;
+    height: 217px;
+    background: url(https://placecats.com/300/200) ; */
+    /* background-color: violet; */
+}
+
+
+
+.videos {
+    display: flex;
+    /* background-color: violet; */
+    margin-top: 15px;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
