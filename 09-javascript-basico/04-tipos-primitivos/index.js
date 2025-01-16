@@ -4,7 +4,7 @@ let usuarioVerificado = false;
 let pessoa = null;
 
 /* if (usuarioVerificado) {
-  console.log("Usuário verificado");
+    console.log("Usuário verificado");
 } else {
-  console.log("Usuário NÃO verificado");
+    console.log("Usuário NÃO verificado");
 } */
