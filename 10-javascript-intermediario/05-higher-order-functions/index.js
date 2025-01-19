@@ -1,18 +1,18 @@
 // FUNÇÃO COMO PARÂMETRO DE OUTRA FUNÇÃO
 
 const calcularAnoDeNascimento = function (
-  idade,
-  mesDeNascimento,
-  imprimirAnoDeNascimento
+	idade,
+	mesDeNascimento,
+	imprimirAnoDeNascimento
 ) {
-  const mesAtual = 10;
-  let anoDeNascimento = 2022 - idade; 
-  if (mesDeNascimento > mesAtual) anoDeNascimento--; 
-  imprimirAnoDeNascimento(anoDeNascimento);
+	const mesAtual = 10;
+	let anoDeNascimento = 2022 - idade;
+	if (mesDeNascimento > mesAtual) anoDeNascimento--;
+	imprimirAnoDeNascimento(anoDeNascimento);
 };
 
 let imprimirAnoDeNascimento = (anoDeNascimento) => {
-  console.log("Seu ano de nascimento é " + anoDeNascimento);
+	console.log("Seu ano de nascimento é " + anoDeNascimento);
 };
 
 calcularAnoDeNascimento(23, 8, imprimirAnoDeNascimento);
@@ -20,7 +20,7 @@ calcularAnoDeNascimento(23, 8, imprimirAnoDeNascimento);
 // OUTRO EXEMPLO:
 
 function mostrarNome(nome, imprimirNome) {
-  imprimirNome(nome);
+	imprimirNome(nome);
 }
 
 let imprimirNome = (nome) => console.log("Seu nome é " + nome + ".");
@@ -60,9 +60,9 @@ function quadruplicar(numero) {
 */
 
 function multiplicar(multiplicador) {
-  return function (numero) {
-    return numero * multiplicador;
-  };
+	return function (numero) {
+		return numero * multiplicador;
+	};
 }
 
 let dobrar = multiplicar(2);

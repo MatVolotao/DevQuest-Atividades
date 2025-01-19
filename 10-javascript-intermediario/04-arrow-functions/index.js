@@ -24,8 +24,10 @@ console.log(resultadoDaSoma(12, 2));
 // No caso de haver apenas um parâmetro, os parênteses não são necessários
 
 const incentivarQuester = (nomeQuester) =>
-  console.log(
-    "Parabéns, " + nomeQuester + ", você chegou ao módulo de JS Intermediário!"
-  );
+	console.log(
+		"Parabéns, " +
+			nomeQuester +
+			", você chegou ao módulo de JS Intermediário!"
+	);
 
 incentivarQuester("Lichtle");
