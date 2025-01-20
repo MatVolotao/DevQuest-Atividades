@@ -1,34 +1,39 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 html,
-body{
-    height: 100%;
+body {
+	height: 100%;
 }
 
-body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-.quadrado2{
-    width: 160px;
-    height: 160px;
-    background-color: red;
+.quadrado {
+	width: 160px;
+	height: 160px;
 }
 
-.quadrado{
-    width: 160px;
-    height: 160px;
-    background-color: blue;
+.vermelho {
+	background-color: red;
 }
 
-button{
+.azul {
+	background-color: blue;
+}
+
+.amarelo{
+	background-color: yellow;
+}
+
+button {
     margin-top: 10px;
     width: 150px;
     height: 30px;
