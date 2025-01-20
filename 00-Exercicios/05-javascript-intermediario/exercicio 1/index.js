@@ -1,12 +1,14 @@
-let estadoBotao = false
+let estadoBotao = false;
 function changeColor() {
-    if (!estadoBotao) {
-        document.getElementsByClassName("quadrado")[0].style.backgroundColor = "yellow";
-        estadoBotao = true
-    } else {
-        document.getElementsByClassName("quadrado")[0].style.backgroundColor = "blue";
-        estadoBotao = false
-    }
+	if (!estadoBotao) {
+		document.getElementsByClassName("quadrado")[0].style.backgroundColor =
+			"yellow";
+		estadoBotao = true;
+	} else {
+		document.getElementsByClassName("quadrado")[0].style.backgroundColor =
+			"blue";
+		estadoBotao = false;
+	}
 }
 
 // OUTRO MODO DE FAZER e mais  organizado e escalável
@@ -29,7 +31,6 @@ btnTrocaCor.addEventListener("click", trocarCor);
 
 // Passo 4 - Para mudar a cor de fundo podemos adicionar e remover as classes que o elemento tem
 function trocarCor() {
-  quadradoAzul.classList.remove("azul");
-  quadradoAzul.classList.add("amarelo");
+	quadradoAzul.classList.remove("azul");
+	quadradoAzul.classList.add("amarelo");
 }
-
