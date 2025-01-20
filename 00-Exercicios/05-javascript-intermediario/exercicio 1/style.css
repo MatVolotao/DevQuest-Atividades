@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quadrado2{
+    width: 160px;
+    height: 160px;
+    background-color: red;
+}
+
+.quadrado{
+    width: 160px;
+    height: 160px;
+    background-color: blue;
+}
+
+button{
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+}
