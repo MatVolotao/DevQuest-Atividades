@@ -51,4 +51,38 @@ main{
     margin: 10px 0;
 }
 
+.acordeon .items .item:last-child{
+    border-bottom: none;
+}
 
+.acordeon .items .item .pergunta{
+    padding-bottom: 15px;
+    transition: 0.2s ease;
+    font-size: 17px;
+    width: 90%;
+    font-weight: 500;
+}
+
+.item .pergunta:hover{
+    color: #f47c57;
+}
+
+.resposta{
+    display: none;
+    padding-bottom: 15px;
+    font-size: 15px;
+    font-weight: 15px;
+}
+
+.acordeon .items .item.ativo h2{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.acordeon .items .item.ativo .resposta {
+    display: block;
+}
+
+.acordeon .items .item.ativo {
+    background-image: url(../images/seta\ aberta.png);
+}
