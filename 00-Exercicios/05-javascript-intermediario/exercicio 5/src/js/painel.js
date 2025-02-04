@@ -1,57 +1,49 @@
-const imagens = document.querySelectorAll('.slide');
-const setaVoltar = document.getElementById('seta-voltar');
-const setaAvancar = document.getElementById('seta-avancar');
+const imagens = document.querySelectorAll(".slide");
+// console.log(imagens)
+const setaVoltar = document.getElementById("seta-voltar");
+const setaAvancar = document.getElementById("seta-avancar");
 
 let imagemAtual = 0;
 
-setaAvancar.addEventListener('click', () => {
-  if (imagemAtual === imagens.length - 1) {
-    return;
-  }
-  imagemAtual++;
-  
-  esconderImagemAberta();
+setaAvancar.addEventListener("click", () => {
+	if (imagemAtual === imagens.length - 1) {
+		return;
+	}
+	imagemAtual++;
 
-  mostrarImagem();
+	esconderImagemAberta();
 
-  mostrarOuEsconderSetas();
-})
+	mostrarImagem();
 
-setaVoltar.addEventListener('click', () => {
-  if (imagemAtual === 0) {
-    return;
-  }
-  imagemAtual--;
-  
-  esconderImagemAberta();
+	mostrarOuEsconderSetas();
+});
 
-  mostrarImagem()
+setaVoltar.addEventListener("click", () => {
+	if (imagemAtual === 0) {
+		return;
+	}
+	imagemAtual--;
 
-  mostrarOuEsconderSetas()
-})
+	esconderImagemAberta();
 
+	mostrarImagem();
+
+	mostrarOuEsconderSetas();
+});
 
 function mostrarImagem() {
-  imagens[imagemAtual].classList.add('mostrar');
-
+	imagens[imagemAtual].classList.add("mostrar");
 }
+
 function esconderImagemAberta() {
-  const imagemAberta = document.querySelector('.mostrar');
-  imagemAberta.classList.remove('mostrar');
+	const imagemAberta = document.querySelector(".mostrar");
+	imagemAberta.classList.remove("mostrar");
 }
 
-function mostrarOuEsconderSetas(){
-  const naoEhAPrimeiraImagem = imagemAtual !== 0;
-  if(naoEhAPrimeiraImagem){
-    setaVoltar.classList.add('opacidade');
-  }else{
-    setaVoltar.classList.remove('opacidade');
-  }
+function mostrarOuEsconderSetas() {
+	const naoEhAPrimeiraImagem = imagemAtual !== 0;
+	const chegouNaUltimaImagem = imagemAtual === imagens.length - 1;
 
-  const chegouNaUltimaImagem = imagemAtual != 0 && imagemAtual === imagens.length - 1;
-  if(chegouNaUltimaImagem){
-    setaAvancar.classList.add('opacidade');
-  }else{
-    setaAvancar.classList.remove('opacidade');
-  }
-} 
+	setaVoltar.classList.toggle("opacidade", !naoEhAPrimeiraImagem);
+	setaAvancar.classList.toggle("opacidade", chegouNaUltimaImagem);
+}
